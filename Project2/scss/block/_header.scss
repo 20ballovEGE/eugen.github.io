@@ -1,0 +1,55 @@
+.head{
+    width: 100%;
+    @include flex;
+    height: 15vh;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+
+.head_logo{
+    @include flex;
+}
+
+.logo{
+    height:100px;
+    width:auto;
+}
+
+.head_navigate{
+    @include flex;
+}
+
+.head_button{
+    @include reg;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    padding-right: 2vw;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.head_info{
+    @include flex;
+}
+
+.head_icons{
+    width: 40px;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#phone{
+    width: 40px;
+}
+
+#place{
+    width: 40px;
+}

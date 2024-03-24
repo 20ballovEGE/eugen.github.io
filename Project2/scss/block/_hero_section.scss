@@ -1,0 +1,91 @@
+.hero_section{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    @include flex;
+    flex-direction: column;
+}
+
+.background_video{
+    @include flex;
+    flex-direction: column;
+}
+
+.video{
+    width: 100vw;
+    height: auto;
+}
+
+.container{
+    width: 100vw;
+    height:100vh;
+    @include flex;
+    @include center;
+}
+
+.img_logo1{
+    width: 500px;
+    height: 200px;
+    align-self: center;
+}
+
+.container_two{
+    position: absolute;
+    @include flex;
+    width: 2200px;
+    height: 500px;
+    background-color:#0e0e0e57;
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 2;
+
+}
+
+#tournament{
+    color: white;
+    font-size: 70px;
+    @include reg;
+}
+
+.tournament_button{
+    @include reg;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.tournament_text{
+    @include flex;
+    width: 500px;
+    height: 200px;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pricepool{
+    @include flex;
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    align-self: center;
+    transform: skew(-15deg);
+    flex-direction: column;
+    @include center
+}
+
+#price{
+    @include black;
+    font-size: 50px;
+    color: red;
+}
+
+#price_name{
+    @include bold;
+    font-size: 50px;
+}
