@@ -1,0 +1,96 @@
+.foot {
+    width: 100vw;
+    height: 25vw;
+    display: flex;
+    background-image: url(/img/end.png);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vw;
+    padding-top: 15vw;
+    padding-bottom: 10vw;
+    background-color: #FFF8F6;
+    @media screen and (max-width:900px) {
+        width: 100vw;
+        height: max-content;
+    }
+}
+
+.foot_grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+    gap: 5vw;
+    @media screen and (max-width:900px) {
+        grid-template-columns:  max-content;
+        grid-template-rows: repeat(2, max-content);
+    }
+}
+
+.foot_card_1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.foot_img{
+    width: 8vw;
+    height: auto;
+}
+
+.footer_p {
+    font-family: $regular;
+    color: $main_gray;
+}
+
+.foot_card_2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.footer_h {
+    font-family: $semi;
+    color: black;
+    font-size: 1.5vw;
+}
+
+.footer_input {
+    border-bottom: 2px solid black;
+    width: 100%;
+    padding: .5vw;
+}
+
+.input_window{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: text;
+}
+
+.input_button {
+    position: absolute;
+    transform: translateX(-5vw);
+    background-color: transparent;
+    border: none;
+    font-family: $semi;
+    color: $main_accent;
+    font-size: 1vw;
+    text-transform: uppercase;
+}
+
+.foot_card_3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    @media screen and (max-width:900px) {
+        display: none;
+    }
+}

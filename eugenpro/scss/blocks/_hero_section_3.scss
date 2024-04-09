@@ -1,0 +1,128 @@
+.hero_section_3 {
+    display: flex;
+    width: 100vw;
+    height: max-content;
+    justify-content: center; 
+    margin-bottom: 20vw;
+    @media screen and (max-width:900px) {
+        margin-top: 20vw;
+        
+    }
+}
+
+.hero_content_3 {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-template-rows: repeat(2,max-content);
+    gap: 2vw;
+    @media screen and (max-width:900px) {
+        grid-template-columns: repeat(2, max-content);
+        grid-template-rows: repeat(3, max-content);
+    }
+}
+
+.hero_text {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 1.5vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-right: 10vw;
+    @media screen and (max-width:900px) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-right: 0;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 6vw;
+    }
+}
+
+.hero_main_text {
+    font-family: $semi;
+    font-size: 3vw;
+    @media screen and (max-width:900px) {
+        font-size: 5vw;
+    }
+}
+
+.hero_pseudo_text {
+    font-family: $medium;
+    font-size: 0.8vw;
+    @media screen and (max-width:900px) {
+        font-size: 2vw;
+    }
+}
+
+.hero_text_button {
+    width: 13vw;
+    height: 3vw;
+    border: solid 2px;
+    border-color: $main_accent;
+    font-size: 1vw;
+    font-family: $medium;
+    @media screen and (max-width:900px) {
+        font-size: 1.8vw;
+        border: solid 3px;
+        border-color: $main_accent;
+        width: 17vw;
+        height: 6vw;
+    }
+    
+}
+
+.hero_img_1 {
+    width: 20vw;
+    height: 15vw;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    @media screen and (max-width:900px) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: 40vw;
+        height: 30vw;
+    }
+}
+
+.hero_img_2 {
+    width: 20vw;
+    height: 15vw;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    @media screen and (max-width:900px) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        width: 40vw;
+        height: 30vw;
+    }
+}
+
+.hero_img_3 {
+    width: 20vw;
+    height: 32vw;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    @media screen and (max-width:900px) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        width: 40vw;
+        height: 64vw;
+    }
+}

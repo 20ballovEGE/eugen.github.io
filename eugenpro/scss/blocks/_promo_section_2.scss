@@ -1,0 +1,67 @@
+.promo_section_2 {
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vw;
+    
+}
+
+.promo_grid_2 {
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 10vw;
+    @media screen and (max-width:900px) {
+        grid-template-columns: repeat(2, max-content);
+        grid-template-rows: repeat(2, max-content);
+    }
+}
+
+.card_promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5vw;
+}
+
+.promo_card_img {
+    width: 4vw;
+    height: 4vw;
+    @media screen and (max-width:900px) {
+        width: 10vw;
+        height: 10vw;
+        
+    }
+}
+
+.promo_h {
+    font-family: $medium;
+    font-size: 1.2vw;
+    color: black;
+    @media screen and (max-width:900px) {
+        font-size: 2vw;
+        
+    }
+}
+
+.promo_p {
+    color: #828181;
+    font-size: .8vw;
+    font-family: $regular;
+    text-align: center;
+    @media screen and (max-width:900px) {
+        font-size: 1.6vw;
+        
+    }
+}
+
+#promo_card_bottom{
+    @media screen and (max-width:900px) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;  
+    }
+    
+}

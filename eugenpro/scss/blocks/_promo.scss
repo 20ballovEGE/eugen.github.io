@@ -1,0 +1,48 @@
+.promo_section {
+    display: flex;
+    width: 100vw;
+    height: 15vw;
+    flex-direction: column;
+    align-items: center;
+    font-family: $medium;
+    @media screen and (max-width:900px){
+        margin-bottom: 4vw;
+    }
+}
+
+.promo_grid {
+    display: grid;
+    visibility: visible;
+    grid-template-rows: repeat(3, max-content);
+    gap: 2vw;
+    justify-items: center;
+}
+
+.promo_sale_hr{
+    border: 1px solid;
+    border-color: $main_accent;
+    width: 10vw;
+    height: 0.4vw;
+    background-color: $main_accent;
+    @media screen and (max-width:900px){
+        width: 20vw;
+    }
+}
+
+.promo_text {
+    font-size: 2vw;
+    font-family: inherit;
+    @media screen and (max-width:900px){
+        font-size: 4vw;
+    }
+}
+
+.promo_text_2 {
+    font-size: 1vw;
+    font-family: inherit;
+    text-align: center;
+    font-style: $main_gray;
+    @media screen and (max-width:900px){
+        font-size: 2vw;
+    }
+}

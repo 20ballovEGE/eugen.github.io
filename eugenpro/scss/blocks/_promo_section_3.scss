@@ -1,0 +1,57 @@
+.promo_section_3{
+    width: 100vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/img/bg.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.promo_grid_m_2 {
+    display: grid;
+    grid-template-columns: repeat(2, max-content) ;
+}
+
+.promo_text_t {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.text_1 {
+    font-family: $medium;
+    color: black;
+}
+
+.text_2 {
+    font-family: $medium;
+    color: $main_accent;
+    font-size: 1.5vw;
+}
+
+.promo_img_1 {
+    width: 5vw;
+    height: auto;
+}
+
+.text_3 {
+    font-family: $medium;
+    font-size: 1.5vw;
+    line-height: 3vw;
+}
+
+.text_4 {
+    font-family: $semi;
+    color: $main_accent;
+}
+
+.promo_img_2 {
+    width: 30vw;
+    height: 30vw;
+}
