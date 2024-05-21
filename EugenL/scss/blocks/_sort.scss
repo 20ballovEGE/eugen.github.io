@@ -1,0 +1,97 @@
+.sort_section{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    @media screen and (max-width: 900px) {
+        align-items: center;
+    }
+}
+
+
+.sort_section_h{
+    color: white;
+    font-family: $SFLight;
+    font-size: 1.5vw;
+    align-self: start;
+    margin-left: 5vw;
+    margin-top: 15vw;
+    margin-bottom: 10vw;
+}
+
+.sort_buttons{
+    display: flex;
+    align-self: flex-start;
+    gap: 2vw;
+    align-items: start;
+    width: max-content;
+    transform: translateX(-5vw);
+    @media screen and (max-width: 900px) {
+        transform: translateX(0);
+        display: grid;
+        grid-template-columns: repeat(2,max-content);
+        font-size: 4vw;
+        margin-bottom: 5vw
+    }
+}
+
+
+.sort_filter { 
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: $SFLight;
+}   
+    
+
+.sort_grid{
+    align-self: flex-end;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 1.5vw;
+    margin-right: 7vw;
+    margin-top: 3vw;
+    @media screen and (max-width: 900px) {
+        grid-template-columns: 1fr;
+        gap: 7vw;
+    }
+}
+.sort_card{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    gap: 1vw;
+    @media screen and (max-width: 900px) {
+        width: 75vw;
+    }
+}
+
+.sort_card.hide{
+    display: none;
+}
+
+.sort_card_img{
+    width: inherit;
+    aspect-ratio: 16/9;
+    border: 1px solid white;
+    border-radius: .5vw;
+    
+}
+.sort_card_h{
+    color: rgba(255, 255, 255, 0.575);
+    font-family: $SFLight;
+    margin-top: 1vw;
+    font-size: 1.2vw;
+    @media screen and (max-width: 900px) {
+        font-size: 3vw;
+        
+    }
+}
+.sort_card_p{
+    color: white;
+    font-family: $SFLight;
+    font-size: 1.5vw;
+    @media screen and (max-width: 900px) {
+        font-size: 4vw;
+    }
+}

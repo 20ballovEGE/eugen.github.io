@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+    // outline: solid green;
+}
+
+@mixin shadow{
+    -webkit-box-shadow: 4px 4px 24px -7px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 4px 4px 24px -7px rgba(0, 0, 0, 0.58);
+    box-shadow: 4px 4px 24px -7px rgba(0, 0, 0, 0.58);
+}
+
+body{
+    background-color: black;
+}
+
+html{
+    overflow-x: hidden;
+    cursor: default;
+    
+    -ms-overflow-style: none;  /* IE и Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+html::-webkit-scrollbar { /* для Chrome, Safari и Opera */
+    display: none;
+}
+
+@font-face {
+    font-family: SF-Pro-Display-Black;
+    src: url(/fonts/SF-Pro-Display-Black.otf);
+}
+
+@font-face {
+    font-family: SF-Pro-Display-Bold;
+    src: url(/fonts/SF-Pro-Display-Bold.otf);
+}
+
+@font-face {
+    font-family: SF-Pro-Display-Light;
+    src: url(/fonts/SF-Pro-Display-Light.otf);
+}
+
+@font-face {
+    font-family: Unbounded-Bold;
+    src: url(/fonts/Unbounded-Bold.ttf);
+}
+
+@font-face {
+    font-family: Unbounded-Light;
+    src: url(/fonts/Unbounded-Light.ttf);
+}
+
+@font-face {
+    font-family: Unbounded-Regular;
+    src: url(/fonts/Unbounded-Regular.ttf);
+}
+
+
+$SFBlack: SF-Pro-Display-Black;
+$SFBold: SF-Pro-Display-Bold;
+$SFLight: SF-Pro-Display-Light;
+$UnBold: Unbounded-Bold;
+$UnLight: Unbounded-Light;
+$UnRegular: Unbounded-Regular;
+
+button{
+    cursor: pointer;
+}
+

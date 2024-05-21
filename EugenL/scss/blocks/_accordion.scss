@@ -1,0 +1,77 @@
+.accordion_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15vw;
+}
+
+.accordion_section_h{
+    color: white;
+    font-family: $SFLight;
+    align-self: flex-start;
+    margin-left: 3vw;
+    margin-bottom: 10vw;
+    font-size: 1.5vw;
+}
+
+.accordion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 1vw;
+    padding-left: 0;
+    padding-bottom: 5vw;
+    width: 80vw;
+    border: 0px;
+    text-align: left;
+    outline: none;
+    font-size: 1.5vw;
+    background-color: transparent;
+    color: white;
+    font-family: $SFLight;
+    transition: all 0.5s ease-in-out;
+    border-bottom: 1px solid white;
+    @media screen and (max-width: 900px) {
+        font-size: 4vw;
+    }
+}
+  
+.accordion_icon{
+    rotate: 0deg;
+    width: 2vw;
+    transition: all 0.5s ease-in-out;
+    @media screen and (max-width: 900px) {
+       width: 2.2vw;
+    }
+}
+
+.ac_active .accordion_icon{
+    rotate: 135deg;
+}
+
+
+
+.panel {
+    
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    max-height: 0;
+    width: 80vw;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    font-size: 1.5vw;
+    
+    @media screen and (max-width: 900px) {
+        font-size: 4vw;
+    }
+}
+  
+.active .panel {
+    max-height: 500px; 
+}
+
+.ac_p{
+    color: rgba(255, 255, 255, 0.432);
+    font-family: $SFLight;
+}

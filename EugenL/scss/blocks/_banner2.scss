@@ -1,0 +1,94 @@
+.banner2 { 
+    width: 100vw;
+    height: 50vw;
+    background-image: url(/img/moon.png);
+    background-position: 15vw;
+    background-size: 45vw;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vw;
+    @media screen and (max-width: 900px) {
+        background-image: unset;
+        height: max-content;
+    }
+}
+
+.adapt_br{
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+}
+
+.adapt_2{
+    display: none;
+    @media screen and (max-width: 900px) {
+        display: unset;
+    }
+}
+
+.banner2_window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2vw;
+    backdrop-filter: blur(7px);
+    background: linear-gradient(135.00deg, rgba(255, 255, 255, 0.15) 0%,rgba(255, 255, 255, 0.15) 100%);
+    color: white;
+    text-align: center;
+    padding: 3vw 6vw; 
+    width: 85vw;
+    gap: 1vw;
+    @media screen and (max-width: 900px) {
+        gap: 10vw;
+        border-radius: 3vw;
+    }
+    
+}
+
+.banner2_h {
+    font-family: $UnLight;
+    font-size: 2.2vw;
+    white-space: nowrap;
+    @media screen and (max-width: 900px) {
+        font-family: $SFLight;
+        font-size: 6vw;
+    }
+}
+.banner2_p {
+    font-family: $UnLight;
+    font-size: 1vw;
+    white-space: nowrap;
+    @media screen and (max-width: 900px) {
+        white-space: wrap;
+        font-size: 2.9vw;
+        text-align: justify;
+        font-family: $SFLight;
+    }
+}
+.banner2_button {
+    display: flex;
+    border: solid 2px;
+    border-radius: 5vw;
+    width: 20vw;
+    height: 3vw;
+    background-color: transparent;
+    color: #F4F3F2;
+    border-color: black;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    font-family: $UnRegular;
+    font-size: .8vw;
+    margin-top: 2vw;
+    @media screen and (max-width: 900px) {
+        font-size: 2vw;
+        width: 40vw;
+        white-space: nowrap;
+        border-color: #F4F3F2;
+        padding: 3vw 20vw;
+    }
+}

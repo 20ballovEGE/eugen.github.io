@@ -1,0 +1,48 @@
+.hero_section_1 { 
+    display: flex;
+    width: 100vw;
+    height: max-content;
+    align-items: center;
+    padding-top: 15vw;
+    padding-left: 15vw;
+    padding-right: 2vw;
+    gap: 10vw;
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+        padding: 0;
+        margin: 2vw;
+        align-items: start;
+        margin-top: 20vw;
+        width: max-content;
+    }
+}
+
+.text_about { 
+    color: white;
+    font-family: $SFLight;
+    font-size: 1.5vw;
+    @media screen and (max-width: 900px) {
+        font-size: 5vw;
+        margin-left: 2vw;
+    }
+}
+
+.hero1_text { 
+    color: rgb(104, 104, 104);
+    font-family: $SFLight;
+    font-size: 1.5vw;
+    font-weight: 300;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: justify;
+    width: 100vw;
+    @media screen and (max-width: 900px) {
+      text-align: unset;
+      line-height: unset;
+      letter-spacing: unset;
+      font-size: 2rem;
+      width: 96vw;
+      align-self: center;
+    }
+}
+

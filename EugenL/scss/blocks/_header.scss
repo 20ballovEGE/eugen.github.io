@@ -1,0 +1,110 @@
+.header {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/header.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (max-width: 900px) {
+      
+     }
+}
+
+.navi_head { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 4vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-top: 2vw;
+    gap: 2vw;
+}
+
+.img_header { 
+    float: left;
+    width: max-content;
+    height: auto;
+}
+
+.language_icon { 
+    width: 2vw;
+    height: auto;
+    cursor: pointer;
+    margin-right: .4vw ;
+}
+
+.header_menu { 
+    background-color: transparent;
+    border: none;
+    color: white;
+    align-content: center; 
+    font-size: 1.6vw;
+    font-family: $SFBold;
+}
+
+.menu_wrap{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 1vw;
+}
+
+.header_text {
+    font-size: 3vw;
+    font-family: $SFLight;
+    text-align: center;
+    color: #F4F3F2 ;
+    margin-top: 5vw;
+    @media screen and (max-width: 900px) {
+       display: none;
+    }
+}
+
+.header_text_caps { 
+    font-family: $SFBlack;
+}
+
+.header_button {
+    display: flex;
+    border: solid 2px;
+    border-radius: 5vw;
+    width: 20vw;
+    height: 3vw;
+    background-color: transparent;
+    border-color: #F4F3F2;
+    color: #F4F3F2;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    font-family: $UnRegular;
+    font-size: .8vw;
+    margin-top: 2vw;
+    @media screen and (max-width: 900px) {
+        display: none;
+      }
+}
+
+#next_button{
+    width: 2.2vw;
+    height: auto;
+    cursor: pointer;
+}
+
+
+.header_adapt_p{
+    color: rgb(244, 243, 242);
+    text-align: center;
+    font-family: $SFLight;
+    white-space: nowrap;
+    font-size: 10vw;
+    margin-top: 300px;
+    display: none;
+    @media screen and (max-width: 900px) {
+        display: unset;
+     }
+}

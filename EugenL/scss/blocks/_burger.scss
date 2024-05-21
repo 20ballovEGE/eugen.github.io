@@ -1,0 +1,84 @@
+.burger_menu { 
+    width: 100%;
+    height: 45vw;
+    background-color: black;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+    transform: translateY(-100%);
+    transition: all ease .6s;
+    @media screen and (max-width: 900px) {
+        height: 90vw;
+    }
+}
+
+.burger_menu.💀{
+    transform: translateY(0);
+}
+.burger_head { 
+    display: flex;
+    justify-content: space-between;
+}
+.burger_logo { 
+    width: 15vw;
+    height: auto;
+    @media screen and (max-width: 900px) {
+        width: 25vw;
+    }
+}
+.burger_close { 
+    background-color: transparent;
+    border: none;
+    font-family: $SFLight;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 2vw;
+    gap: 1vw;
+    @media screen and (max-width: 900px) {
+        font-size: 4vw;
+    }
+}
+
+.burger_close_icon{
+    rotate: 45deg;
+    width: 1.5vw;
+    aspect-ratio: 1/1;
+    @media screen and (max-width: 900px) {
+        width: 3vw;
+    }
+}
+
+.burger_nav { 
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    justify-content: center;
+    text-align: left;
+    @media screen and (max-width: 900px) {
+        text-align: unset;
+        align-items: center;
+        margin-left: 0%;
+        gap: 3vw;
+    }
+    
+
+}
+
+.burger_link:hover{
+    color: white;
+}
+
+.burger_link { 
+    font-family: $SFLight;
+    font-size: 4vw;
+    color: rgba(255, 255, 255, 0.507);
+    transition: all ease .6s;
+    @media screen and (max-width: 900px) {
+        font-size: 6vw;
+    }
+}
